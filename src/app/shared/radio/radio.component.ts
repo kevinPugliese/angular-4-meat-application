@@ -42,10 +42,12 @@ export class RadioComponent implements OnInit, ControlValueAccessor {
   registerOnChange(fn: any): void {
     this.onChange = fn
   }
+  
   /**
    * Set the function to be called when the control receives a touch event.
    */
   registerOnTouched(fn: any): void {  }
+
   /**
    * This function is called when the control status changes to or from "DISABLED".
    * Depending on the value, it will enable or disable the appropriate DOM element.
